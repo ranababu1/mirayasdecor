@@ -1,0 +1,120 @@
+/**
+ * Mirayas Decor — design tokens.
+ *
+ * The single source of truth for every visual decision: colours, type,
+ * spacing, radii, shadows, motion and structure. Consumed by base.css,
+ * layout.css, components.css, utilities.css and woocommerce.css — never
+ * hard-code a value downstream that belongs here.
+ *
+ * Also loaded into the block editor (add_editor_style()), where the same
+ * palette powers the editor colour swatches registered in inc/setup.php.
+ *
+ * Breakpoints (mobile-first, px): 600 / 768 / 1024. Test at 320–1920.
+ */
+
+:root {
+	color-scheme: light;
+
+	/* ------------------------------------------------------------------ *
+	 * Colour. Warm neutrals, deep forest, soft clay — restraint first.  *
+	 * ------------------------------------------------------------------ */
+
+	--color-bg: #faf9f6;            /* Ivory */
+	--color-surface: #ffffff;
+	--color-surface-alt: #f4f1eb;   /* Sand */
+	--color-text: #1d1d1b;          /* Ink */
+	--color-muted: #6f6f6a;
+	--color-border: #e6e2da;
+	--color-border-strong: #cfc8bc;
+
+	--color-primary: #303a32;       /* Forest */
+	--color-primary-deep: #262f29;
+	--color-on-primary: #faf9f6;
+	--color-primary-soft: #eef0ec;
+
+	--color-accent: #9a7b5a;        /* Clay */
+	--color-accent-ink: #7c5b3e;    /* AA-safe clay for small text */
+	--color-accent-soft: #f0e7dd;
+
+	--color-sale: #96543c;
+	--color-star: #9a7b5a;
+
+	--color-footer: #28322b;
+	--color-footer-border: rgb(250 249 246 / 0.14);
+	--color-overlay: rgb(29 29 27 / 0.45);
+
+	--color-success-bg: #edf2ed;
+	--color-success-ink: #2c3a30;
+	--color-error-bg: #f8ece6;
+	--color-error-ink: #7f3a24;
+	--color-info-bg: #f4f1eb;
+	--color-info-ink: #4c4a42;
+
+	/* Derived hover states. */
+	--color-primary-hover: #3c4a40;
+	--color-secondary-hover: #f4f1eb;
+
+	/* ------------------------------------------------------------------ *
+	 * Typography. Fraunces for display, Inter for everything else.      *
+	 * ------------------------------------------------------------------ */
+
+	--font-body: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+	--font-display: 'Fraunces', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+
+	--text-xs: 0.75rem;
+	--text-sm: 0.875rem;
+	--text-base: 1rem;
+	--text-md: 1.125rem;
+	--text-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.5rem);
+	--text-xl: clamp(1.5rem, 1.3rem + 0.9vw, 2rem);
+	--text-2xl: clamp(2rem, 1.7rem + 1.4vw, 2.75rem);
+	--text-3xl: clamp(2.5rem, 2rem + 2.2vw, 3.75rem);
+	--text-hero: clamp(2.75rem, 1.4rem + 6vw, 5.5rem);
+
+	--leading-tight: 1.12;
+	--leading-snug: 1.32;
+	--leading-body: 1.7;
+
+	--tracking-tight: -0.01em;
+	--tracking-caps: 0.14em;
+
+	/* ------------------------------------------------------------------ *
+	 * Space. 4px base scale plus the shared section rhythm.             *
+	 * ------------------------------------------------------------------ */
+
+	--space-2xs: 0.25rem;
+	--space-xs: 0.5rem;
+	--space-sm: 0.75rem;
+	--space-md: 1rem;
+	--space-lg: 1.5rem;
+	--space-xl: 2rem;
+	--space-2xl: 3rem;
+	--space-3xl: 4rem;
+	--section-y: clamp(3.5rem, 2.5rem + 4vw, 7rem);
+
+	/* ------------------------------------------------------------------ *
+	 * Shape, depth, motion and structure.                               *
+	 * ------------------------------------------------------------------ */
+
+	--radius-sm: 8px;
+	--radius-md: 14px;
+	--radius-lg: 22px;
+	--radius-pill: 999px;
+
+	--shadow-sm: 0 4px 18px rgb(0 0 0 / 0.05);
+	--shadow-md: 0 14px 45px rgb(0 0 0 / 0.08);
+	--shadow-drawer: -24px 0 60px rgb(29 29 27 / 0.12);
+
+	--ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+	--duration-fast: 160ms;
+	--duration-base: 240ms;
+	--duration-slow: 380ms;
+
+	--container: 1240px;
+	--container-narrow: 760px;
+	--container-page: 980px;
+	--header-height: 72px;
+
+	--z-header: 40;
+	--z-dialog: 100;
+}

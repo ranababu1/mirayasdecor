@@ -1,0 +1,36 @@
+/**
+ * Mirayas Decor — self-hosted variable fonts (WOFF2, font-display: swap).
+ *
+ * Two families only: Fraunces (display: headings, hero, editorial) and
+ * Inter (body and interface). Both files are variable fonts covering the
+ * full weight range, so no per-weight files are loaded.
+ *
+ * Only inter-var.woff2 and fraunces-var.woff2 are preloaded (see
+ * inc/enqueue.php); the italic face loads lazily on first use.
+ *
+ * This file is also loaded inside the block editor (add_editor_style()).
+ */
+
+@font-face {
+	font-family: 'Inter';
+	src: url('../fonts/inter-var.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	src: url('../fonts/fraunces-var.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Fraunces';
+	src: url('../fonts/fraunces-italic-var.woff2') format('woff2');
+	font-weight: 100 900;
+	font-style: italic;
+	font-display: swap;
+}

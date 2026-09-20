@@ -1,0 +1,595 @@
+# Copyright (C) 2026 Mirayas Decor
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Mirayas Decor 1.0.0\n"
+"Report-Msgid-Bugs-To: https://mirayasdecor.in\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-20T23:56:41+00:00\n"
+"Language: en_US\n"
+"X-Domain: mirayas-decor\n"
+
+#: 404.php:20
+#: template-parts/content/content-none.php:35
+msgid "Go to homepage"
+msgstr ""
+
+#: 404.php:28
+#: template-parts/content/content-none.php:22
+msgid "Browse the shop"
+msgstr ""
+
+#: 404.php:38
+#: inc/seo.php:170
+msgid "Error 404"
+msgstr ""
+
+#: 404.php:39
+msgid "This page has wandered off"
+msgstr ""
+
+#: 404.php:40
+msgid "The page you are looking for may have been moved or no longer exists. Try a search, or head back to the shop."
+msgstr ""
+
+#: comments.php:27
+msgid "%s Comment"
+msgid_plural "%s Comments"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:58
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:70
+msgid "Leave a comment"
+msgstr ""
+
+#: comments.php:71
+msgid "Reply to %s"
+msgstr ""
+
+#: comments.php:72
+msgid "Post comment"
+msgstr ""
+
+#: header.php:24
+msgid "Skip to content"
+msgstr ""
+
+#: home.php:13
+#: inc/customizer.php:100
+#: inc/seo.php:158
+msgid "Journal"
+msgstr ""
+
+#: inc/customizer.php:27
+msgid "Mirayas Decor"
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php:51
+msgid "Show the announcement bar"
+msgstr ""
+
+#: inc/customizer.php:68
+msgid "Announcement text"
+msgstr ""
+
+#: inc/customizer.php:90
+msgid "Front Page"
+msgstr ""
+
+#: inc/customizer.php:96
+msgid "Hero"
+msgstr ""
+
+#: inc/customizer.php:97
+msgid "Featured products"
+msgstr ""
+
+#: inc/customizer.php:98
+msgid "Collections"
+msgstr ""
+
+#: inc/customizer.php:99
+msgid "Brand story"
+msgstr ""
+
+#: inc/customizer.php:101
+msgid "Trust strip"
+msgstr ""
+
+#: inc/customizer.php:102
+msgid "Newsletter"
+msgstr ""
+
+#: inc/customizer.php:117
+msgid "Show “%s”"
+msgstr ""
+
+#: inc/customizer.php:125
+msgid "Hero eyebrow"
+msgstr ""
+
+#: inc/customizer.php:126
+msgid "Hero title"
+msgstr ""
+
+#: inc/customizer.php:127
+msgid "Hero intro text"
+msgstr ""
+
+#: inc/customizer.php:128
+msgid "Hero button label"
+msgstr ""
+
+#: inc/customizer.php:129
+msgid "Collections heading"
+msgstr ""
+
+#: inc/customizer.php:130
+msgid "Journal heading"
+msgstr ""
+
+#: inc/customizer.php:131
+msgid "Trust point 1"
+msgstr ""
+
+#: inc/customizer.php:132
+msgid "Trust point 2"
+msgstr ""
+
+#: inc/customizer.php:133
+msgid "Trust point 3"
+msgstr ""
+
+#: inc/customizer.php:134
+msgid "Trust point 4"
+msgstr ""
+
+#: inc/customizer.php:135
+msgid "Newsletter heading"
+msgstr ""
+
+#: inc/customizer.php:136
+msgid "Newsletter text"
+msgstr ""
+
+#: inc/customizer.php:211
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php:227
+msgid "Copyright line"
+msgstr ""
+
+#: inc/customizer.php:228
+msgid "Use %year% and %site% for the year and site name."
+msgstr ""
+
+#: inc/seo.php:135
+#: inc/template-functions.php:115
+msgctxt "breadcrumb"
+msgid "Home"
+msgstr ""
+
+#: inc/seo.php:168
+msgid "Search results"
+msgstr ""
+
+#: inc/setup.php:58
+msgid "Primary Menu"
+msgstr ""
+
+#: inc/setup.php:59
+msgid "Footer Menu"
+msgstr ""
+
+#: inc/setup.php:74
+msgid "Ink"
+msgstr ""
+
+#: inc/setup.php:79
+msgid "Forest"
+msgstr ""
+
+#: inc/setup.php:84
+msgid "Clay"
+msgstr ""
+
+#: inc/setup.php:89
+msgid "Sand"
+msgstr ""
+
+#: inc/setup.php:94
+msgid "Ivory"
+msgstr ""
+
+#: inc/setup.php:105
+msgid "Small"
+msgstr ""
+
+#: inc/setup.php:106
+msgid "S"
+msgstr ""
+
+#: inc/setup.php:111
+msgid "Normal"
+msgstr ""
+
+#: inc/setup.php:112
+msgid "M"
+msgstr ""
+
+#: inc/setup.php:117
+msgid "Medium"
+msgstr ""
+
+#: inc/setup.php:118
+msgid "L"
+msgstr ""
+
+#: inc/setup.php:123
+msgid "Large"
+msgstr ""
+
+#: inc/setup.php:124
+msgid "XL"
+msgstr ""
+
+#: inc/setup.php:129
+msgid "Display"
+msgstr ""
+
+#: inc/setup.php:130
+msgid "XXL"
+msgstr ""
+
+#: inc/setup.php:168
+msgid "Footer Column %d"
+msgstr ""
+
+#: inc/setup.php:172
+msgid "Displayed as a column in the footer."
+msgstr ""
+
+#: inc/template-functions.php:149
+msgid "Breadcrumb"
+msgstr ""
+
+#: inc/template-functions.php:173
+msgid "Newer stories"
+msgstr ""
+
+#: inc/template-functions.php:174
+msgid "Older stories"
+msgstr ""
+
+#: inc/template-functions.php:191
+msgid "Free shipping across India on orders over ₹2,500."
+msgstr ""
+
+#: inc/template-functions.php:193
+msgid "New arrivals"
+msgstr ""
+
+#: inc/template-functions.php:194
+msgid "Curated decor for considered homes."
+msgstr ""
+
+#: inc/template-functions.php:195
+msgid "Hand-finished pieces made in small batches — textiles, ceramics, lighting and objects that make a house feel like yours."
+msgstr ""
+
+#: inc/template-functions.php:196
+msgid "Shop new arrivals"
+msgstr ""
+
+#: inc/template-functions.php:197
+msgid "Shop by room"
+msgstr ""
+
+#: inc/template-functions.php:198
+msgid "From the journal"
+msgstr ""
+
+#: inc/template-functions.php:199
+msgid "Free shipping over ₹2,500"
+msgstr ""
+
+#: inc/template-functions.php:200
+msgid "15-day easy returns"
+msgstr ""
+
+#: inc/template-functions.php:201
+msgid "Secure payments"
+msgstr ""
+
+#: inc/template-functions.php:202
+msgid "Sustainably sourced materials"
+msgstr ""
+
+#: inc/template-functions.php:203
+msgid "Join the inner circle"
+msgstr ""
+
+#: inc/template-functions.php:204
+msgid "Be first to see new collections, and receive 10% off your first order."
+msgstr ""
+
+#: inc/template-functions.php:225
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: inc/template-functions.php:227
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr ""
+
+#: inc/template-functions.php:229
+msgctxt "daily archives date format"
+msgid "F j, Y"
+msgstr ""
+
+#: search.php:24
+msgid "Search results for &ldquo;%s&rdquo;"
+msgstr ""
+
+#: search.php:29
+msgid "%s result found"
+msgid_plural "%s results found"
+msgstr[0] ""
+msgstr[1] ""
+
+#: searchform.php:14
+msgid "Search for:"
+msgstr ""
+
+#: searchform.php:21
+msgid "Search products and stories"
+msgstr ""
+
+#: searchform.php:25
+#: searchform.php:27
+#: template-parts/header/actions.php:19
+#: template-parts/header/search-dialog.php:30
+msgid "Search"
+msgstr ""
+
+#: single.php:27
+msgid "Previous story"
+msgstr ""
+
+#: single.php:28
+msgid "Next story"
+msgstr ""
+
+#: template-parts/components/payment-icons.php:21
+msgid "Accepted payment methods: %s"
+msgstr ""
+
+#: template-parts/content/content-none.php:13
+msgid "No matches"
+msgstr ""
+
+#: template-parts/content/content-none.php:14
+msgid "Nothing found for that search"
+msgstr ""
+
+#: template-parts/content/content-none.php:15
+msgid "Check the spelling or try a broader phrase — or browse the collections for inspiration."
+msgstr ""
+
+#: template-parts/content/content-none.php:30
+msgid "Coming soon"
+msgstr ""
+
+#: template-parts/content/content-none.php:31
+msgid "Nothing published here yet"
+msgstr ""
+
+#: template-parts/content/content-none.php:32
+msgid "New pieces are being prepared. Head back to the homepage to see the latest."
+msgstr ""
+
+#: template-parts/content/content-single.php:26
+msgid "Published %s"
+msgstr ""
+
+#: template-parts/content/content-single.php:34
+msgid " by %s"
+msgstr ""
+
+#: template-parts/content/content-single.php:75
+msgid "Tagged"
+msgstr ""
+
+#: template-parts/header/actions.php:30
+#: template-parts/header/nav-drawer.php:48
+#: woocommerce/checkout/thankyou.php:36
+#: woocommerce/myaccount/dashboard.php:22
+msgid "My account"
+msgstr ""
+
+#: template-parts/header/actions.php:38
+msgid "View cart"
+msgstr ""
+
+#: template-parts/header/actions.php:56
+msgid "Open menu"
+msgstr ""
+
+#: template-parts/header/cart-drawer.php:16
+msgid "Shopping cart"
+msgstr ""
+
+#: template-parts/header/cart-drawer.php:19
+msgid "Your cart"
+msgstr ""
+
+#: template-parts/header/cart-drawer.php:24
+msgid "Close cart"
+msgstr ""
+
+#: template-parts/header/nav-drawer.php:15
+msgid "Menu"
+msgstr ""
+
+#: template-parts/header/nav-drawer.php:23
+msgid "Close menu"
+msgstr ""
+
+#: template-parts/header/nav-drawer.php:30
+msgid "Mobile menu"
+msgstr ""
+
+#: template-parts/header/nav-drawer.php:52
+msgid "Cart"
+msgstr ""
+
+#: template-parts/header/navigation.php:14
+msgid "Primary menu"
+msgstr ""
+
+#: template-parts/header/search-dialog.php:33
+msgid "What are you looking for today?"
+msgstr ""
+
+#: template-parts/header/search-dialog.php:38
+msgid "Close search"
+msgstr ""
+
+#: template-parts/header/search-dialog.php:47
+msgid "Popular right now"
+msgstr ""
+
+#: template-parts/home/collections.php:49
+msgid "%s piece"
+msgid_plural "%s pieces"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/home/editorial.php:36
+msgid "Read the journal"
+msgstr ""
+
+#: template-parts/home/featured.php:30
+msgid "Featured pieces"
+msgstr ""
+
+#: template-parts/home/featured.php:32
+msgid "View all"
+msgstr ""
+
+#: template-parts/home/newsletter.php:33
+msgid "Email address"
+msgstr ""
+
+#: template-parts/home/newsletter.php:42
+msgid "Your email address"
+msgstr ""
+
+#: template-parts/home/newsletter.php:45
+msgid "Subscribe"
+msgstr ""
+
+#: template-parts/home/newsletter.php:50
+msgid "Thank you — please confirm the subscription from your inbox."
+msgstr ""
+
+#: template-parts/home/story.php:17
+msgid "The Mirayas atelier — Jodhpur, India"
+msgstr ""
+
+#: template-parts/home/story.php:22
+msgid "Our story"
+msgstr ""
+
+#: template-parts/home/story.php:25
+msgid "Made slowly, in small batches, made to last."
+msgstr ""
+
+#: template-parts/home/story.php:29
+msgid "Mirayas Decor began with a simple conviction: a home is not furnished, it is composed. Every piece we offer is shaped by artisans whose families have worked with mango wood, handloom cotton and brass for generations."
+msgstr ""
+
+#: template-parts/home/story.php:33
+msgid "We keep production runs deliberately small, finish every surface by hand, and choose materials that age with grace. The result is furniture and decor that quietly outlives trends — and often us."
+msgstr ""
+
+#: template-parts/home/story.php:36
+msgid "— The Mirayas atelier"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:17
+msgid "Return to shop"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:33
+msgid "Empty cart"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:34
+msgid "Your cart is waiting to be filled"
+msgstr ""
+
+#: woocommerce/cart/cart-empty.php:35
+msgid "Browse the collections and add the pieces you would like to live with."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:48
+msgid "Thank you — your order is confirmed."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:51
+msgid "A confirmation email is on its way. We will be in touch as soon as your pieces leave the atelier."
+msgstr ""
+
+#: woocommerce/checkout/thankyou.php:87
+msgid "Continue shopping"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:27
+msgid "Welcome back, %s"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:36
+msgid "Hello %s! From here you can review recent orders, manage addresses and update your account details."
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:46
+msgid "Orders"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:47
+msgid "Track and review purchases"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:52
+msgid "Addresses"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:53
+msgid "Shipping and billing details"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:58
+msgid "Account details"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:59
+msgid "Name, email and password"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:65
+msgid "Log out"
+msgstr ""
+
