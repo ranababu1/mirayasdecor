@@ -1,0 +1,387 @@
+/**
+ * Mirayas Decor — layout.
+ *
+ * Page scaffolding: containers, the site frame, header/footer structure,
+ * main-content rhythm, grids and the WooCommerce wrappers. Visual skin
+ * for components lives in components.css.
+ */
+
+/* Containers -------------------------------------------------------------------- */
+
+.container {
+	width: 100%;
+	max-width: calc(var(--container) + 3rem);
+	margin-inline: auto;
+	padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+.container--narrow {
+	max-width: calc(var(--container-narrow) + 3rem);
+}
+
+.container--page {
+	max-width: calc(var(--container-page) + 3rem);
+}
+
+/* Site frame: sticky header, fluid main, anchored footer. ------------------------ */
+
+.site {
+	display: flex;
+	flex-direction: column;
+	min-height: 100dvh;
+}
+
+.site-main {
+	flex: 1;
+}
+
+.site-main > .container {
+	margin-block-start: var(--space-2xl);
+}
+
+.site-main--front {
+	padding: 0;
+}
+
+.site-main--front > .container {
+	margin-block-start: 0;
+}
+
+.site-main > .container:last-child {
+	margin-block-end: var(--space-2xl);
+}
+
+.site-main > .container + .site-main--404-actions {
+	margin-block-end: var(--space-2xl);
+}
+
+/* Header ------------------------------------------------------------------------ */
+
+.site-header {
+	position: sticky;
+	inset-block-start: 0;
+	z-index: var(--z-header);
+	background-color: var(--color-bg);
+	border-block-end: 1px solid transparent;
+	transition: border-color var(--duration-base) var(--ease), box-shadow var(--duration-base) var(--ease);
+}
+
+.site-header.is-stuck {
+	border-block-end-color: var(--color-border);
+	box-shadow: var(--shadow-sm);
+}
+
+.site-header__inner {
+	display: flex;
+	align-items: center;
+	gap: var(--space-lg);
+	min-height: var(--header-height);
+}
+
+.site-navigation {
+	display: none;
+	margin-inline-start: auto;
+	margin-inline-end: var(--space-lg);
+}
+
+.site-header__actions {
+	display: flex;
+	align-items: center;
+	gap: var(--space-2xs);
+	margin-inline-start: auto;
+}
+
+.site-navigation ~ .site-header__actions {
+	margin-inline-start: 0;
+}
+
+@media (min-width: 1024px) {
+	.site-navigation {
+		display: block;
+	}
+
+	.site-header__action--menu {
+		display: none;
+	}
+}
+
+/* Announcement bar scrolls away naturally (not part of the sticky header). */
+.announcement-bar {
+	background-color: var(--color-primary);
+	color: var(--color-on-primary);
+	font-size: var(--text-sm);
+	letter-spacing: var(--tracking-caps);
+	text-transform: uppercase;
+}
+
+.announcement-bar__inner {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	padding-block: var(--space-xs);
+}
+
+/* Footer ------------------------------------------------------------------------ */
+
+.site-footer {
+	margin-block-start: var(--space-3xl);
+	background-color: var(--color-footer);
+	color: var(--color-bg);
+}
+
+.site-footer__widgets {
+	border-block-end: 1px solid var(--color-footer-border);
+}
+
+.site-footer__widgets-inner {
+	display: grid;
+	gap: var(--space-2xl);
+	grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+	padding-block: var(--space-3xl);
+}
+
+.site-footer__bottom-inner {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: var(--space-lg);
+	padding-block: var(--space-lg);
+}
+
+/* Page header ------------------------------------------------------------------- */
+
+.page-header {
+	padding-block: clamp(2.5rem, 2rem + 3vw, 4.5rem) 0;
+}
+
+.page-header--compact {
+	padding-block-start: clamp(2rem, 1.6rem + 2vw, 3rem);
+}
+
+.page-header__inner {
+	max-width: var(--container-narrow);
+}
+
+.page-header--center .page-header__inner {
+	margin-inline: auto;
+	text-align: center;
+}
+
+/* Section rhythm ---------------------------------------------------------------- */
+
+.front-section {
+	padding-block: var(--section-y);
+}
+
+.front-section__head {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: var(--space-md);
+	margin-block-end: var(--space-2xl);
+}
+
+.front-section__head--center {
+	justify-content: center;
+	text-align: center;
+}
+
+.front-section--alt {
+	background-color: var(--color-surface-alt);
+}
+
+/* Entry and post grids ----------------------------------------------------------- */
+
+.post-grid {
+	display: grid;
+	gap: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+	grid-template-columns: 1fr;
+}
+
+@media (min-width: 600px) {
+	.post-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media (min-width: 1024px) {
+	.post-grid {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* WooCommerce wrappers ----------------------------------------------------------- */
+
+.shop-layout {
+	margin-block-start: var(--space-xl);
+	margin-block-end: var(--space-3xl);
+}
+
+.product-layout {
+	margin-block-start: var(--space-xl);
+	margin-block-end: var(--space-3xl);
+}
+
+@media (min-width: 1024px) {
+	.product-layout .product {
+		display: grid;
+		grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+		gap: clamp(2rem, 1rem + 4vw, 4rem);
+		align-items: start;
+	}
+
+	.product-layout .product > .woocommerce-tabs,
+	.product-layout .product > .related,
+	.product-layout .product > .up-sells {
+		grid-column: 1 / -1;
+		margin-block-start: var(--space-2xl);
+	}
+}
+
+/* Dialogs: geometry and motion --------------------------------------------------
+ * Native <dialog> elements. The open/close lifecycle is managed by
+ * navigation.js (showModal(), backdrop click, animated close, scroll lock);
+ * visual skin for heads, titles and bodies lives in components.css.
+ */
+
+dialog.drawer {
+	position: fixed;
+	inset-block: 0;
+	inset-inline: auto 0;
+	width: min(26rem, 92vw);
+	max-width: none;
+	max-height: none;
+	height: 100dvh;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	background: none;
+	overflow: visible; /* the panel handles its own scroll */
+	color: var(--color-text);
+}
+
+dialog.search-dialog {
+	position: fixed;
+	inset-block-start: 10vh;
+	inset-inline: 0;
+	margin-inline: auto;
+	width: min(38rem, 92vw);
+	max-width: none;
+	max-height: none;
+	border: 0;
+	padding: 0;
+	background: none;
+	overflow: visible;
+	color: var(--color-text);
+}
+
+dialog[open] {
+	visibility: visible;
+}
+
+dialog.drawer[open] .drawer__panel {
+	animation: mirayas-drawer-in var(--duration-slow) var(--ease) both;
+}
+
+dialog.search-dialog[open] .search-dialog__inner {
+	animation: mirayas-dialog-in var(--duration-slow) var(--ease) both;
+}
+
+dialog::backdrop {
+	background-color: var(--color-overlay);
+	animation: mirayas-backdrop-in var(--duration-base) var(--ease) both;
+}
+
+dialog.is-closing .drawer__panel {
+	animation: mirayas-drawer-out var(--duration-base) var(--ease) both;
+}
+
+dialog.is-closing .search-dialog__inner {
+	animation: mirayas-dialog-out var(--duration-base) var(--ease) both;
+}
+
+dialog.is-closing::backdrop {
+	animation: mirayas-backdrop-out var(--duration-base) var(--ease) both;
+}
+
+@keyframes mirayas-drawer-in {
+	from {
+		transform: translateX(4%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes mirayas-drawer-out {
+	from {
+		transform: translateX(0);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateX(4%);
+		opacity: 0;
+	}
+}
+
+@keyframes mirayas-dialog-in {
+	from {
+		transform: translateY(12px);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes mirayas-dialog-out {
+	from {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	to {
+		transform: translateY(12px);
+		opacity: 0;
+	}
+}
+
+@keyframes mirayas-backdrop-in {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes mirayas-backdrop-out {
+	from {
+		opacity: 1;
+	}
+
+	to {
+		opacity: 0;
+	}
+}
+
+/* Reduced motion: keep dialogs functional, skip the choreography. */
+@media (prefers-reduced-motion: reduce) {
+	dialog.drawer[open] .drawer__panel,
+	dialog.search-dialog[open] .search-dialog__inner,
+	dialog.is-closing .drawer__panel,
+	dialog.is-closing .search-dialog__inner,
+	dialog::backdrop,
+	dialog.is-closing::backdrop {
+		animation: none;
+	}
+}

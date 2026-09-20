@@ -1,0 +1,50 @@
+/**
+ * Mirayas Decor — utilities.
+ *
+ * Deliberately tiny. This theme avoids a utility framework; structural
+ * patterns live in layout.css and components.css. Only cross-cutting
+ * helper classes that markup or JavaScript rely on belong here.
+ */
+
+/* Small supporting note, e.g. the closed-comments line. */
+.note {
+	font-size: var(--text-sm);
+	color: var(--color-muted);
+}
+
+.text-center {
+	text-align: center;
+}
+
+/* Visually hidden, still announced by screen readers. */
+.u-visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip-path: inset(50%);
+	white-space: nowrap;
+	border: 0;
+}
+
+/*
+ * Body scroll lock while a dialog is open. navigation.js sets
+ * --mirayas-scrollbar-comp to the current scrollbar width so the page
+ * does not shift horizontally when overflow is hidden.
+ */
+body.is-scroll-locked {
+	overflow: hidden;
+	padding-inline-end: var(--mirayas-scrollbar-comp, 0px);
+}
+
+/*
+ * Exit animation state, driven by navigation.js: a dialog first gets
+ * .is-closing, the out animations on its panel and ::backdrop (layout.css)
+ * play, then close() removes the open attribute. The dialog itself must stay
+ * visible while .is-closing is set — the animations fade the pieces.
+ */
+dialog.is-closing {
+	visibility: visible;
+}
