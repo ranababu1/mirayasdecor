@@ -16,18 +16,7 @@ defined( 'ABSPATH' ) || exit;
 		<div class="container site-footer__bottom-inner">
 			<p class="site-footer__copy">
 				<?php
-				$mirayas_copyright = get_theme_mod(
-					'mirayas_footer_copyright',
-					mirayas_default( 'footer_copyright' )
-				);
-
-				echo wp_kses_post(
-					str_replace(
-						array( '%year%', '%site%' ),
-						array( gmdate( 'Y' ), get_bloginfo( 'name' ) ),
-						$mirayas_copyright
-					)
-				);
+				echo mirayas_get_footer_copyright();
 				?>
 			</p>
 

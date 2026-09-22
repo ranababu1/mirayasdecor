@@ -225,7 +225,7 @@ function mirayas_customize_register( $wp_customize ) {
 		'mirayas_footer_copyright',
 		array(
 			'label'       => __( 'Copyright line', 'mirayas-decor' ),
-			'description' => __( 'Use %year% and %site% for the year and site name.', 'mirayas-decor' ),
+			'description' => __( 'Use {year} and {site} for the year and site name.', 'mirayas-decor' ),
 			'section'     => 'mirayas_footer',
 			'type'        => 'textarea',
 		)
@@ -235,17 +235,9 @@ function mirayas_customize_register( $wp_customize ) {
 		array(
 			'selector'        => '.site-footer__copy',
 			'render_callback' => function () {
-				$mirayas_copy = get_theme_mod( 'mirayas_footer_copyright', mirayas_default( 'footer_copyright' ) );
-
 				return sprintf(
 					'<p class="site-footer__copy">%s</p>',
-					wp_kses_post(
-						str_replace(
-							array( '%year%', '%site%' ),
-							array( gmdate( 'Y' ), get_bloginfo( 'name' ) ),
-							$mirayas_copy
-						)
-					)
+					mirayas_get_footer_copyright()
 				);
 			},
 		)
