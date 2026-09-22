@@ -26,6 +26,10 @@ if ( ! defined( 'MIRAYAS_DIR' ) ) {
 
 /**
  * Theme directory URL, without a trailing slash.
+ *
+ * Always append a leading slash when concatenating asset paths, e.g.
+ * `MIRAYAS_URI . '/assets/css/'`. Omitting it produces URLs like
+ * `/themes/mirayasdecorassets/…` that silently 404.
  */
 if ( ! defined( 'MIRAYAS_URI' ) ) {
 	define( 'MIRAYAS_URI', get_template_directory_uri() );

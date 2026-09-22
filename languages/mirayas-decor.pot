@@ -171,7 +171,7 @@ msgid "Copyright line"
 msgstr ""
 
 #: inc/customizer.php:228
-msgid "Use %year% and %site% for the year and site name."
+msgid "Use {year} and {site} for the year and site name."
 msgstr ""
 
 #: inc/seo.php:135

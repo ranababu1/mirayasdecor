@@ -15,7 +15,7 @@ defined( 'ABSPATH' ) || exit;
  * Enqueue front-end styles.
  */
 function mirayas_enqueue_styles() {
-	$mirayas_css = MIRAYAS_URI . 'assets/css/';
+	$mirayas_css = MIRAYAS_URI . '/assets/css/';
 
 	wp_enqueue_style( 'mirayas-fonts', $mirayas_css . 'fonts.css', array(), MIRAYAS_VERSION );
 	wp_enqueue_style( 'mirayas-tokens', $mirayas_css . 'tokens.css', array( 'mirayas-fonts' ), MIRAYAS_VERSION );
@@ -38,7 +38,7 @@ add_action( 'wp_enqueue_scripts', 'mirayas_enqueue_styles' );
  * requires jQuery on all shop pages) and open the cart drawer in response.
  */
 function mirayas_enqueue_scripts() {
-	$mirayas_js = MIRAYAS_URI . 'assets/js/';
+	$mirayas_js = MIRAYAS_URI . '/assets/js/';
 
 	wp_enqueue_script(
 		'mirayas-main',
@@ -95,7 +95,7 @@ add_action( 'wp_enqueue_scripts', 'mirayas_enqueue_scripts' );
  * face is intentionally not preloaded and loads lazily on first use.
  */
 function mirayas_preload_fonts() {
-	$mirayas_fonts = MIRAYAS_URI . 'assets/fonts/';
+	$mirayas_fonts = MIRAYAS_URI . '/assets/fonts/';
 
 	printf(
 		"<link rel=\"preload\" href=\"%s\" as=\"font\" type=\"font/woff2\" crossorigin>\n",

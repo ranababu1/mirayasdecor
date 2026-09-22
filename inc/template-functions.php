@@ -202,11 +202,44 @@ function mirayas_default( $key ) {
 			'trust_item_4'      => __( 'Sustainably sourced materials', 'mirayas-decor' ),
 			'newsletter_title'  => __( 'Join the inner circle', 'mirayas-decor' ),
 			'newsletter_text'   => __( 'Be first to see new collections, and receive 10% off your first order.', 'mirayas-decor' ),
-			'footer_copyright'  => '© %year% %site%. All rights reserved.',
+			// Placeholder tokens are {year} and {site}, never %year% / %site%:
+			// WordPress passes unsaved string defaults through sprintf() inside
+			// get_theme_mod() (see wp-includes/theme.php), where "%site%" would
+			// match the %s format specifier and cause a fatal error on PHP 8+.
+			'footer_copyright'  => '© {year} {site}. All rights reserved.',
 		)
 	);
 
 	return isset( $mirayas_defaults[ $key ] ) ? $mirayas_defaults[ $key ] : '';
+}
+
+/**
+ * The rendered footer copyright line.
+ *
+ * Replaces the {year} and {site} tokens — plus the legacy %year% / %site%
+ * spellings kept for values saved before the tokens changed — with the
+ * current year and site name, and returns the result through wp_kses_post()
+ * so it is safe to echo.
+ *
+ * @return string Copyright line, safe for output.
+ */
+function mirayas_get_footer_copyright() {
+	$mirayas_copyright = get_theme_mod( 'mirayas_footer_copyright', mirayas_default( 'footer_copyright' ) );
+
+	if ( ! is_string( $mirayas_copyright ) ) {
+		return '';
+	}
+
+	$mirayas_year = gmdate( 'Y' );
+	$mirayas_site = get_bloginfo( 'name' );
+
+	return wp_kses_post(
+		str_replace(
+			array( '{year}', '{site}', '%year%', '%site%' ),
+			array( $mirayas_year, $mirayas_site, $mirayas_year, $mirayas_site ),
+			$mirayas_copyright
+		)
+	);
 }
 
 /**
