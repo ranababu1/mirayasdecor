@@ -111,6 +111,16 @@
 	margin: 0;
 }
 
+/*
+ * base.css stacks plain lists via `li + li { margin-block-start }`. In this
+ * flex row that margin is not collapsed by `align-items: center` — the margin
+ * box is centered, so every item after the first sits half the margin lower.
+ * Neutralize it for top-level items only; drop-down items keep the rhythm.
+ */
+.site-navigation__list > li + li {
+	margin-block-start: 0;
+}
+
 .site-navigation__list a {
 	display: block;
 	font-size: var(--text-sm);
@@ -893,6 +903,14 @@
 .breadcrumbs__current {
 	font-weight: 500;
 	color: var(--color-text);
+}
+
+/* Site customisation (migrated from Customizer Additional CSS): the trail is
+   hidden site-wide. The BreadcrumbList structured data is emitted server-side
+   (see mirayas_breadcrumbs() in inc/template-functions.php), so hiding the
+   visible nav does not affect the schema. */
+.breadcrumbs {
+	display: none;
 }
 
 /* Post card ----------------------------------------------------------------------------------------------- */
