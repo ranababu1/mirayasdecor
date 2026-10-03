@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
  * The theme version, used for cache busting assets.
  */
 if ( ! defined( 'MIRAYAS_VERSION' ) ) {
-	define( 'MIRAYAS_VERSION', '1.0.0' );
+	define( 'MIRAYAS_VERSION', '1.0.1' );
 }
 
 /**

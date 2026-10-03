@@ -28,9 +28,7 @@ get_header();
 	 */
 	do_action( 'mirayas_front_hero' );
 	do_action( 'mirayas_front_featured' );
-	do_action( 'mirayas_front_collections' );
-	do_action( 'mirayas_front_story' );
-	do_action( 'mirayas_front_editorial' );
+
 	do_action( 'mirayas_front_trust' );
 	do_action( 'mirayas_front_newsletter' );
 	?>

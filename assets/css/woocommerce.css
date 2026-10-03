@@ -439,7 +439,7 @@
 
 .woocommerce .woocommerce-ordering,
 .woocommerce-page .woocommerce-ordering {
-	margin: 0;
+	margin: 30px 0;
 }
 
 .woocommerce .woocommerce-ordering select {
